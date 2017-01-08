@@ -38,7 +38,7 @@ center_screen = windower.get_windower_settings().x_res / 2 - targetBarWidth / 2
 text_settings = {}
 text_settings.pos = {}
 text_settings.pos.x = center_screen
-text_settings.pos.y = 50
+text_settings.pos.y = 150
 text_settings.text = {}
 text_settings.text.size = 14
 text_settings.text.font = 'Arial'
@@ -58,7 +58,7 @@ text_settings.bg.visible = false
 tbg_cap_settings = {}
 tbg_cap_settings.pos = {}
 tbg_cap_settings.pos.x = center_screen
-tbg_cap_settings.pos.y = 50
+tbg_cap_settings.pos.y = 150
 tbg_cap_settings.visible = true
 tbg_cap_settings.color = {}
 tbg_cap_settings.color.alpha = 255
@@ -79,7 +79,7 @@ tbg_cap_settings.draggable = false
 stbg_cap_settings = {}
 stbg_cap_settings.pos = {}
 stbg_cap_settings.pos.x = center_screen
-stbg_cap_settings.pos.y = 50
+stbg_cap_settings.pos.y = 150
 stbg_cap_settings.visible = true
 stbg_cap_settings.color = {}
 stbg_cap_settings.color.alpha = 255
@@ -100,7 +100,7 @@ stbg_cap_settings.draggable = false
 tbg_body_settings = {}
 tbg_body_settings.pos = {}
 tbg_body_settings.pos.x = center_screen
-tbg_body_settings.pos.y = 50
+tbg_body_settings.pos.y = 150
 tbg_body_settings.visible = true
 tbg_body_settings.color = {}
 tbg_body_settings.color.alpha = 255
@@ -121,7 +121,7 @@ tbg_body_settings.draggable = false
 stbg_body_settings = {}
 stbg_body_settings.pos = {}
 stbg_body_settings.pos.x = center_screen + 400
-stbg_body_settings.pos.y = 65
+stbg_body_settings.pos.y = 165
 stbg_body_settings.visible = true
 stbg_body_settings.color = {}
 stbg_body_settings.color.alpha = 255
@@ -142,7 +142,7 @@ stbg_body_settings.draggable = false
 tfgg_body_settings = {}
 tfgg_body_settings.pos = {}
 tfgg_body_settings.pos.x = center_screen
-tfgg_body_settings.pos.y = 50
+tfgg_body_settings.pos.y = 150
 tfgg_body_settings.visible = true
 tfgg_body_settings.color = {}
 tfgg_body_settings.color.alpha = 200
@@ -163,7 +163,7 @@ tfgg_body_settings.draggable = false
 tfg_body_settings = {}
 tfg_body_settings.pos = {}
 tfg_body_settings.pos.x = center_screen
-tfg_body_settings.pos.y = 50
+tfg_body_settings.pos.y = 150
 tfg_body_settings.visible = true
 tfg_body_settings.color = {}
 tfg_body_settings.color.alpha = 255
@@ -184,7 +184,7 @@ tfg_body_settings.draggable = false
 stfg_body_settings = {}
 stfg_body_settings.pos = {}
 stfg_body_settings.pos.x = center_screen + 400
-stfg_body_settings.pos.y = 65
+stfg_body_settings.pos.y = 165
 stfg_body_settings.visible = true
 stfg_body_settings.color = {}
 stfg_body_settings.color.alpha = 255
@@ -207,7 +207,7 @@ defaults.font = 'Arial'
 defaults.font_size = 14
 defaults.pos = {}
 defaults.pos.x = 400
-defaults.pos.y = 50
+defaults.pos.y = 150
 
 settings = config.load(defaults)
 config.save(settings)
@@ -263,11 +263,11 @@ config.register(settings, function(settings_table)
     tbg_cap_l:pos_x(tbg_cap_l:pos_x() - 1)
     tbg_cap_r:pos_x(tbg_cap_r:pos_x() + targetBarWidth + 1)
     
-    stbg_cap_l:pos(stbg_cap_l:pos_x() + 399, 65)
-    stbg_cap_r:pos(stbg_cap_r:pos_x() + subtargetBarWidth + 1, 65)
-    stfg_body:pos(stfg_body:pos_x() + 400, 65)
-    stbg_body:pos(stbg_body:pos_x() + 400, 65)
-    st_text:pos(st_text:pos_x() + 400, 65)
+    stbg_cap_l:pos(stbg_cap_l:pos_x() + 399, 165)
+    stbg_cap_r:pos(stbg_cap_r:pos_x() + subtargetBarWidth + 1, 165)
+    stfg_body:pos(stfg_body:pos_x() + 400, 165)
+    stbg_body:pos(stbg_body:pos_x() + 400, 165)
+    st_text:pos(st_text:pos_x() + 400, 165)
 end)
 
 
